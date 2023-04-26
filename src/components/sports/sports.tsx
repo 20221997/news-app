@@ -14,7 +14,10 @@ export const Sports = () => {
     useEffect(() => {
         getSports()
     }, []);
-  // console.log(sports)
+    if(loading){
+        return <p>{loading}...</p>
+       }
+    console.log(sports)
     return (
         <section className='popularPost'>
             <h1>sports</h1>
