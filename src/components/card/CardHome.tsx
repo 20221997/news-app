@@ -18,7 +18,7 @@ const classes = {
 }
 
 export const CardHome = ({ article }: props) => {
-    const {urlToImage, title, author,publishedAt,url} = article;
+    const {urlToImage, title, author,publishedAt} = article;
     const {loading} = useContext(NewsContext);
     if(loading) return <Snipper />
 

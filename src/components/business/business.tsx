@@ -10,7 +10,7 @@ export const Business = () => {
       {
         business.map(({title,urlToImage,content}) => (
           <div key={title} >
-            <img src={urlToImage} alt='image' style={{width:'300px'}} />
+            <img src={urlToImage} alt='bussines' style={{width:'300px'}} />
             <div>
               <h3>{title}</h3>
               <hr />
