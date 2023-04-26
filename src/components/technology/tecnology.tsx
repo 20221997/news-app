@@ -14,7 +14,10 @@ export const Tecnology = () => {
   useEffect(() => {
     getTecnology()
   }, []);
-  // console.log(tecnology)
+  if(loading){
+    return <p>{loading}...</p>
+   }
+  console.log(tecnology)
   return (
     <div>
         <h1>Tecnology</h1>
