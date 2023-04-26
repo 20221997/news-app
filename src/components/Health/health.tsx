@@ -5,6 +5,7 @@ import { Article } from '../../interface/interface';
 export const Health = () => {
   const [loading, setloading] = useState(true);
   const [health, setHealth ] = useState<Article[]>([]);
+  console.log("🚀 ~ file: health.tsx:8 ~ Health ~ health:", health)
 
   const getHealth = async() => {
     const data:Article[] = await getNews('health');
@@ -14,8 +15,10 @@ export const Health = () => {
   useEffect(() => {
     getHealth()
   }, []);
-  // console.log(entertainment)
+
   return (
-    <h1>Health</h1>
+    <>
+      <p>{loading}...</p>
+    </>
   )
 }
